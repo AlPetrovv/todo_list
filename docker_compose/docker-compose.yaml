@@ -1,0 +1,41 @@
+version: '3.9'
+
+
+services:
+    django:
+        build: ../backend/core
+        container_name: todo_list-django
+        ports:
+          - "8000:8000"
+        env_file:
+          - ../backend/app_envs/django.env
+          - ../backend/app_envs/postgres.env
+        command: ["sh", "entrypoint.sh"]
+        volumes:
+          - static_source:/home/app/files/static_sources
+          - static:/home/app/files/static
+          - media:/home/app/files/media
+          - logs:/home/app/files/logs
+          - locale:/home/app/files/locale
+        depends_on:
+          - postgres
+        user: app
+
+    postgres:
+      image: postgis/postgis:16-3.4-alpine
+      container_name: todo_list-db
+      ports:
+        - "5432:5432"
+      volumes:
+        - postgres_todo_list:/var/lib/postgresql/data
+      env_file:
+        - ../backend/app_envs/postgres.env
+      restart: always
+
+volumes:
+  postgres_todo_list:
+  static:
+  media:
+  logs:
+  locale:
+  static_source:

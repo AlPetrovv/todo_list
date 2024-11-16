@@ -1,0 +1,42 @@
+[
+  {
+    "email": "sample@mail.ty",
+    "password": "sam45plepassword",
+    "re_password": "sam45plepassword"
+  },
+  {
+    "email": "sa_mple@mail.ty",
+    "password": "sam45plepassword",
+    "re_password": "sam45plepassword"
+  },
+  {
+    "email": "sam.ple@mail.ty",
+    "password": "sam45plepassword",
+    "re_password": "sam45plepassword"
+  },
+  {
+    "email": "sa-mple@mail.ty",
+    "password": "sam45plepassword",
+    "re_password": "sam45plepassword"
+  },
+  {
+    "email": "sa34mple@mail.ty",
+    "password": "sam45plepassword",
+    "re_password": "sam45plepassword"
+  },
+  {
+    "email": "1sample@mail.ty",
+    "password": "sam45plepassword",
+    "re_password": "sam45plepassword"
+  },
+  {
+    "email": "2sample@mail.ty",
+    "password": "sam45plepassword",
+    "re_password": "sam45plepassword"
+  },
+  {
+    "email": "3sample@mail.ty",
+    "password": "sam45plepassword",
+    "re_password": "sam45plepassword"
+  }
+]
