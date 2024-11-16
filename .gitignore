@@ -1,0 +1,17 @@
+.vscode
+.idea/
+.venv/
+
+__pycache__/
+*.pyc
+*.mo
+db.sqlite3
+
+backend/app_envs/*.env
+docker_compose/envs/*.env
+*/settings_local.py
+*/localsettings.py
+backend/core/files/locale
+backend/core/files/media
+backend/core/files/logs
+backend/core/files/static
