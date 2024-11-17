@@ -1,8 +1,9 @@
 # Разворачивание
 
 1. `git clone https://github.com/AlPetrovv/todo_list.git`   
-2. Создать env файлы по шаблонам в директориях `backend/app_envs` и `docker_compose/envs`
-3. `make run` если используем docker compose, если не используем - нужно создать и выполнить миграции + статик файлы.
+2. Создать env файлы по шаблонам в директориях `backend/app_envs` и `docker_compose/envs`.
+3. `make run` если используем docker compose, если используем IDE, то нужно установить рабочую директорию backend/core
+и запивисимости с poetry, выполнить миграции (migrate) и статик файлы (collectstatic), запустить проект.
 4. проверить что всё завелось
 
 ## Дополнительно 

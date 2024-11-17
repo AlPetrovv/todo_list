@@ -1,1 +1,1 @@
-from tests.auth_users import api_tests
+from tests.auth_users.api_tests import *  # bad variable
