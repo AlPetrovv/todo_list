@@ -6,7 +6,7 @@ services:
         build: ../backend/core
         container_name: todo_list-django
         ports:
-          - "8000:8000"
+          - "8000:${DJANGO_PORT}"
         env_file:
           - ../backend/app_envs/django.env
           - ../backend/app_envs/postgres.env
@@ -25,7 +25,7 @@ services:
       image: postgis/postgis:16-3.4-alpine
       container_name: todo_list-db
       ports:
-        - "5432:5432"
+        - "5432:${POSTGRES_PORT}"
       volumes:
         - postgres_todo_list:/var/lib/postgresql/data
       env_file:
