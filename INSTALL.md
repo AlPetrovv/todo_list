@@ -2,7 +2,7 @@
 
 1. `git clone https://github.com/AlPetrovv/todo_list.git`   
 2. Создать env файлы по шаблонам в директориях `backend/app_envs` и `docker_compose/envs`.
-3. `make run` если используем docker compose
+3. `make run` если используем docker compose(при этом убедится, что docker и make установлены)
 Если используем IDE для запуска, необходимо:
    1. нужно установить рабочую директорию backend/core
    2. установить python 3.11
